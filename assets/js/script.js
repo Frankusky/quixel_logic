@@ -86,7 +86,7 @@
         },
         injectClickCellsEvent: function () {
             var self = this;
-            $("table").on("click", "td", function () {
+            $("#table").on("click", "td", function () {
                 var row = $(this).attr("row");
                 var column = $(this).attr("column");
                 if (row && column && self.answer[row][column]) {
